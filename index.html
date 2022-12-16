@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+    <main>
+        <section id="login">
+            <!--span class="material-icons">menu</span-->
+            <div id="imagem">
+
+            </div>
+            <div id="formulario">
+                <h1>Login</h1>
+                <p>Seja bem-vindo(a) faça o seu login</p>
+                <form action="login.php" method="post" autocomplete="off">
+                    <div class="campo">
+                        <span class="material-icons">person</span>
+                        <input type="email" name="email" id="iemail" placeholder="Seu e-mail" autocomplete="email" maxlength="30" required>
+                        <label for="iemail">Login</label>
+                    </div>
+                    <div class="campo">
+                        <span class="material-icons">vpn_key</span>
+                        <input type="password" name="senha" id="isenha" placeholder="Sua senha" autocomplete="current-password" minlength="8" maxlength="20" required>
+                        <label for="isenha">Senha</label>
+                    </div>
+                    <input type="submit" value="Entrar">
+                    <a href="esqueci.html" class="botao">
+                        Esqueci a senha 
+                        <span class="material-icons">email</span>
+                    </a>
+                </form>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
